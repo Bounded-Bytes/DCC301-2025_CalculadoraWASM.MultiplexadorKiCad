@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Calculadora WASM</title>
+<style>
+body { font-family: Arial; max-width: 600px; margin: 30px auto; }
+input, select, button { padding: 6px; margin: 4px; }
+</style>
+</head>
+<body>
+<h1>Calculadora WebAssembly</h1>
+
+<input id="a" type="number" value="10">
+<select id="op">
+  <option value="add">+</option>
+  <option value="sub">-</option>
+  <option value="mul">*</option>
+  <option value="divide">/</option>
+</select>
+<input id="b" type="number" value="5">
+<button id="calc">Calcular</button>
+
+<div id="result">Resultado: —</div>
+
+<script src="calculadora.js"></script>
+<script>
+
+createModule().then(Module => {
+  console.log('cwrap presente?', !!Module.cwrap);
+  
+  const add = Module.cwrap('add', 'number', ['number','number']);
+  const sub = Module.cwrap('sub', 'number', ['number','number']);
+  const mul = Module.cwrap('mul', 'number', ['number','number']);
+  const divide = Module.cwrap('divide', 'number', ['number','number']);
+
+  const $a = document.getElementById('a');
+  const $b = document.getElementById('b');
+  const $op = document.getElementById('op');
+  const $res = document.getElementById('result');
+  const $btn = document.getElementById('calc');
+
+  $btn.addEventListener('click', () => {
+    try {
+      // pega valores do input
+      const a = Number($a.value);
+      const b = Number($b.value);
+
+      // calcula
+      let r;
+      switch($op.value) {
+        case 'add': r = add(a,b); break;
+        case 'sub': r = sub(a,b); break;
+        case 'mul': r = mul(a,b); break;
+        case 'divide': r = divide(a,b); break;
+        default: throw new Error('Operação desconhecida: ' + $op.value);
+      }
+
+      // mostra resultado
+      $res.textContent = Number.isFinite(r)
+        ? 'Resultado: ' + r
+        : 'Resultado: Erro (não-numérico ou divisão por zero)';
+
+    } catch (err) {
+      // captura qualquer erro inesperado
+      console.error('Erro ao calcular:', err);
+      $res.textContent = 'Resultado: Erro interno (veja console)';
+    }
+  });
+});
+
+</script>
