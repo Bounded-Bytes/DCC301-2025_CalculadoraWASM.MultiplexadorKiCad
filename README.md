@@ -13,7 +13,7 @@ Este repositório contém duas atividades extras para a disciplina de **AOC**:
 
 - **Descrição:** Projeto de uma calculadora aritmética simples implementada em C, compilada para WebAssembly usando Emscripten, com interface HTML/JS.  
 - **Ferramentas usadas:** C, Emscripten, HTML, JavaScript.  
-- **Conteúdo da pasta `calculadoraWASM/`:**  
+- **Conteúdo da pasta `CalculadoraWASM`:**  
   - `index.html` → interface da calculadora  
   - `calculadora.c` → código C da calculadora  
   - `calculadora.js` e `calculadora.wasm` → arquivos gerados pelo Emscripten 
