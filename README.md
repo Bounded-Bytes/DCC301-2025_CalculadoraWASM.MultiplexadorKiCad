@@ -27,7 +27,7 @@ Este repositório contém duas atividades extras para a disciplina de **AOC**:
 
 ## 2️⃣ Multiplexador 4x1 – KiCad
 
-- **Descrição:** Projeto de multiplexador 4x1, com esquemático completo e PCB pronta para fabricação.  
+- **Descrição:** Projeto de um multiplexador 4x1, com esquemático completo e PCB pronta para fabricação.  
 - **Ferramentas usadas:** KiCad.
 - **Conteúdo da pasta:**
   - `esquematico.kicad_sch` → esquemático do circuito  
