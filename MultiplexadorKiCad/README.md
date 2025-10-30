@@ -20,7 +20,7 @@ O circuito implementa a lógica booleana de um **Multiplexador 4x1**, que seleci
 | CI 74LS32 (Porta OR – 2 entradas) | 1 | 2,50 | 2,50 | Três portas em cascata para OR de 4 entradas |
 | Chave Nidec CAS-120A1 (SPDT Deslizante) | 6 | 2,00 | 12,00 | Chaves SPDT 3 pinos, conectadas entre VCC e GND |
 | Resistor 330 Ω (1/4 W) | 1 | 0,50 | 0,50 | Limita corrente do LED |
-| Mini LED (3 mm) | 1 | 1,00 | 1,00 | Indica saída HIGH |
+| Mini LED (3 mm) | 1 | 1,00 | 1,00 | Indica visualmente a saída HIGH |
 | **TOTAL** |  |  | **R$ 24,50** |
 ---
 
