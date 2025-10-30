@@ -41,9 +41,7 @@ O custo de fabricação (R$ 18 – 36 por unidade) foi obtido a partir da divis�
 
 ## 4. Arquivos do Projeto
 
-- `multiplexador.sch` → esquemático elétrico  
-- `multiplexador.kicad_pcb` → layout da placa  
-- `multiplexador.net` → netlist gerada pelo KiCad  
-- `gerber/` → arquivos prontos para fabricação  
-- `BOM.csv` → lista de materiais exportada  
+- `multiplexador.kicad_sch` → esquemático elétrico do circuito
+- `multiplexador.kicad_pcb` → layout da placa PCB 
+
 
