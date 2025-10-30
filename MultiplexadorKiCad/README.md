@@ -11,10 +11,11 @@ O circuito implementa a lógica booleana de um **Multiplexador 4x1**, que seleci
 ### **Função lógica do circuito:** $$OUT_{\text{final}} = (E_0 \cdot \overline{S_1} \cdot \overline{S_0}) + (E_1 \cdot \overline{S_1} \cdot S_0) + (E_2 \cdot S_1 \cdot \overline{S_0}) + (E_3 \cdot S_1 \cdot S_0)$$
 
 <p align="center">
-  <img src="./imagem-esquematico.png" alt="Multiplexador 4x1" width="550">
+  <br>
+  <img src="./imagem-esquematico.png" alt="Multiplexador 4x1" width="600"><br>
+  <em>Diagrama esquemático do multiplexador</em>
 </p>
 
-diagrama esquemático do multiplexador
 ---
 
 ## 2. Lista de Componentes
@@ -29,6 +30,13 @@ diagrama esquemático do multiplexador
 | Resistor 330 Ω (1/4 W) | 1 | 0,50 | 0,50 | Limita corrente do LED |
 | Mini LED (3 mm) | 1 | 1,00 | 1,00 | Indica visualmente a saída HIGH |
 | **TOTAL** |  |  | **R$ 26,00** |
+
+<p align="center">
+  <br>
+  <img src="./imagem-PCB-topo.png" alt="Topo do PCB" width="450">
+  <img src="./imagem-PCB-fundo.png" alt="Fundo do PCB" width="462"><br>
+  <em>Vista superior e inferior da Placa de Circuito Impresso</em>
+</p>
 
 ---
 
