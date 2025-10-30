@@ -6,7 +6,7 @@ Este documento descreve o projeto de um **Multiplexador 4x1** implementado com *
 
 ## 1. Descrição do Circuito
 
-O circuito implementa a lógica booleana de um **Multiplexador 4x1**, que seleciona uma entre quatro entradas de dados (`E0`, `E1`, `E2`, `E3`) e a encaminha para uma única saída (`Y_FINAL`), de acordo com a combinação de dois bits seletores (`S1`, `S0`).
+O circuito implementa a lógica booleana de um **Multiplexador 4x1**, que seleciona uma entre quatro entradas de dados (`E0`, `E1`, `E2`, `E3`) e a encaminha para uma única saída (`OUT_final`), de acordo com a combinação de dois bits seletores (`S1`, `S0`).
 
 ### **Função lógica do circuito:** $$OUT_{\text{final}} = (E_0 \cdot \overline{S_1} \cdot \overline{S_0}) + (E_1 \cdot \overline{S_1} \cdot S_0) + (E_2 \cdot S_1 \cdot \overline{S_0}) + (E_3 \cdot S_1 \cdot S_0)$$
 ---
