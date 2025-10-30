@@ -10,6 +10,10 @@ O circuito implementa a lógica booleana de um **Multiplexador 4x1**, que seleci
 
 ### **Função lógica do circuito:** $$OUT_{\text{final}} = (E_0 \cdot \overline{S_1} \cdot \overline{S_0}) + (E_1 \cdot \overline{S_1} \cdot S_0) + (E_2 \cdot S_1 \cdot \overline{S_0}) + (E_3 \cdot S_1 \cdot S_0)$$
 
+<p align="center">
+  <img src="./imagem-esquematico.png" alt="Multiplexador 4x1" width="550">
+</p>
+
 diagrama esquemático do multiplexador
 ---
 
