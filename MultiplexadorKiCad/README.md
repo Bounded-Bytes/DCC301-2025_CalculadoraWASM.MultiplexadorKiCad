@@ -21,10 +21,11 @@ diagrama esquemático do multiplexador
 | CI 74LS04 (Inversor NOT) | 1 | 2,50 | 2,50 | Geração de $\overline{S_1}$ e $\overline{S_0}$ |
 | CI 74LS32 (Porta OR – 2 entradas) | 1 | 2,50 | 2,50 | Três portas em cascata para OR de 4 entradas |
 | Chave Nidec CAS-120A1 (SPDT Deslizante) | 6 | 2,00 | 12,00 | Chaves seletoras SPDT 3 pinos |
-| Conector Pin Header (Conn_01x01) | 3 | 0,50 | 1,50 | Para VCC, GND e Saída de Dados ($OUT_{\text{final}}$).
+| Conector Pin Header (Conn_01x01) | 3 | 0,50 | 1,50 | Para VCC, GND e saída de dados ($OUT_{\text{final}}$).
 | Resistor 330 Ω (1/4 W) | 1 | 0,50 | 0,50 | Limita corrente do LED |
 | Mini LED (3 mm) | 1 | 1,00 | 1,00 | Indica visualmente a saída HIGH |
 | **TOTAL** |  |  | **R$ 26,00** |
+
 ---
 
 ## 3. Estimativa de Custo de Produção da PCB
