@@ -31,4 +31,5 @@ Este repositório contém duas atividades extras para a disciplina de **AOC**:
 - **Ferramentas usadas:** KiCad.
 - **Conteúdo da pasta `MultiplexadorKiCad`:**
   - `multiplexador.kicad_sch` → esquemático elétrico do circuito
-  - `multiplexador.kicad_pcb` → layout da placa PCB 
+  - `multiplexador.kicad_pcb` → layout da placa PCB
+  - `imagem-esquematico.png`, `imagem-PCB-topo.png`, e `imagem-PCB-fundo.png` → imagens do diagrama e PCB do circuito
